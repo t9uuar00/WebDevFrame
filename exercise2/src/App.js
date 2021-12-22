@@ -3,14 +3,10 @@ import Title from './components/Title';
 import ShoppingList from './components/ShoppingList';
 import styles from './App.module.css';
 import './App.css';
-
-/* A ES6 class style stateful component for the shopping list application */
 class App extends React.Component {
   constructor(props)
   {
-    /* You should call super(props) before any other statement. 
-       Otherwise, this.props will be undefined in the constructor, which can lead to bugs.
-    */
+
     super(props);
 
     this.state = {
@@ -18,7 +14,11 @@ class App extends React.Component {
         { id: 1, value: 'Milk', qty: 5, unit: 'ltr' },
         { id: 2, value: 'Bananas', qty: 6, unit: 'pcs' },
         { id: 3, value: 'Bread', qty: 3, unit: 'x' },
-        { id: 4, value: 'Eggs', qty: 16, unit: 'x' }
+        { id: 4, value: 'Eggs', qty: 16, unit: 'x' },
+        { id: 5, value: 'Tomatoes', qty: 10, unit: 'pcs' },
+        { id: 6, value: 'Apple Juice', qty: 5, unit: 'ltr' },
+        { id: 7, value: 'Fishsticks', qty: 12, unit: 'x' },
+        { id: 8, value: 'Cheese', qty: 2, unit: 'x'}
       ]
     };
 
